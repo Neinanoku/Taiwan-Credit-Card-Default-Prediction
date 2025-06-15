@@ -292,6 +292,7 @@ AdaBoost: Generates fewer false alerts (higher precision) but misses more defaul
 _________________________
 
 Let's see the graphs:
+
 ![roc_curves_v3](https://github.com/user-attachments/assets/244cb206-4d5d-4540-9d84-59caf3fbcd10)
 
 All three models sit almost on top of each other, so their overall AUC is basically identical.
