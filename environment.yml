@@ -1,0 +1,11 @@
+name: credit-default-ml
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - scikit-learn
+  - imbalanced-learn
+  - matplotlib
+  # - notebook #uncomment if Jupyter notebook is required.
