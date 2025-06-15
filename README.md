@@ -127,16 +127,16 @@ y = 1 if the customer defaulted next month, else 0.
 
 X = all remaining columns except ID and the target.
 
-
+```python
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.25, stratify=y, random_state=RANDOM_STATE)
 ```
-
 75 % training, 25 % hold-out test.
 
 stratify=y preserves the original class ratio (~22 % defaults) in both sets.
 
 random_state fixes the shuffle for reproducibility.
+
 
 ```python
     preprocessor = make_preprocessor(df)
