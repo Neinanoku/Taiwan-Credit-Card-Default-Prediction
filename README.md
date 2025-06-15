@@ -288,3 +288,14 @@ KNN: Catches many defaulters (high recall) but raises many false alarms (low pre
 SVM: Offers the best blend of recall and specificity, plus decent precision. A solid default choice when you need a balanced error profile.
 
 AdaBoost: Generates fewer false alerts (higher precision) but misses more defaulters (lower recall). Suitable when the cost of a false alarm is high.
+
+_________________________
+
+Let's see the graphs:
+![roc_curves_v3](https://github.com/user-attachments/assets/244cb206-4d5d-4540-9d84-59caf3fbcd10)
+
+All three models sit almost on top of each other, so their overall AUC is basically identical.
+
+![pr_curves](https://github.com/user-attachments/assets/022bdd17-dd5e-42b8-bc87-7220697ea5d7)
+
+Here the picture is clearer. AdaBoost has the highest area-under-the-PR curve. That means you can pick a recall target and still keep the best precision with AdaBoost. For the heavily imbalanced default-vs-non-default problem, PR curves give more insight than ROC, and AdaBoost offers the cleanest trade-off between catching defaulters and avoiding false alarms.
